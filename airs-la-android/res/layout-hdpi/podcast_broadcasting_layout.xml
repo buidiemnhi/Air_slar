@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/broadcast_background"
+        android:src="@drawable/background"/>
+
+    <TextView
+        android:id="@+id/broadcast_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Fossil GPS - May, 2014 Scientific American"
+        android:textSize="24sp"/>
+
+    <LinearLayout
+        android:id="@+id/favorites"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/rewind"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.223"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/rewind"
+            android:src="@drawable/rewind_button"
+            android:onClick="onRewind"/>
+
+        <ImageView
+            android:id="@+id/add_to_favorites"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.777"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/add_to_favorites"
+            android:src="@drawable/favorites_button"
+            android:onClick="onAddFavorite"/>
+
+        <!--<ImageView-->
+        <!--android:id="@+id/speed"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="0.182"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:contentDescription="@string/speed"-->
+        <!--android:src="@drawable/high_speed_button"-->
+        <!--android:onClick="onSpeed"/>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="2dp"
+        android:layout_above="@id/favorites"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/previous"
+            android:paddingRight="2dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/previous"
+            android:src="@drawable/previous_button"
+            android:onClick="onPrevious"/>
+
+        <ImageView
+            android:id="@+id/play_pause"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.36"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/play_pause"
+            android:src="@drawable/pause_button"
+            android:onClick="onPlay"/>
+
+        <ImageView
+            android:id="@+id/next"
+            android:paddingLeft="3dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.31"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/next"
+            android:src="@drawable/next_button"
+            android:onClick="onNext"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

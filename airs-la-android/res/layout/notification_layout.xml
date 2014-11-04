@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/player_notification"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/player_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/player_icon"
+        android:src="@drawable/notification"/>
+
+    <TextView
+        android:id="@+id/player_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/player_icon"
+        android:layout_alignTop="@id/player_icon"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        style="?android:attr/textColorPrimaryInverse"/>
+
+    <!--<TextView-->
+    <!--android:id="@+id/player_text"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_toRightOf="@id/player_icon"-->
+    <!--android:layout_below="@id/player_title"-->
+    <!--style="?android:attr/textColorPrimaryInverse"/>-->
+
+    <ImageView
+        android:id="@+id/player_rewind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@id/player_title"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="@string/player_rewind"
+        android:src="@drawable/notification_rewind_button"/>
+
+    <ImageView
+        android:id="@+id/player_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/player_rewind"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="@string/player_play"
+        android:src="@drawable/notification_previous_button"/>
+
+    <ImageView
+        android:id="@+id/player_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/player_previous"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="@string/player_play"
+        android:src="@drawable/notification_pause_button"/>
+
+    <ImageView
+        android:id="@+id/player_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/player_play"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="@string/player_next"
+        android:src="@drawable/notification_next_button"/>
+
+</RelativeLayout>

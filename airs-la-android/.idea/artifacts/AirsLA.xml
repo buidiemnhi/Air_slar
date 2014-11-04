@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="apk" name="AirsLA">
+    <output-path>$PROJECT_DIR$/classes/artifacts/AirsLA</output-path>
+    <properties id="android-properties">
+      <options>
+        <option name="keyAlias" value="the_holy_egt_google_play_key" />
+        <option name="keyPassword" value="QW5kcm9pZEBFR1Q6UmV2b2x1dGlvbg==" />
+        <option name="keyStorePassword" value="RUdUQEFuZHJvaWQ6RXZvbHV0aW9u" />
+        <option name="keyStoreUrl" value="file://$USER_HOME$/Personal/EGT/egt_pkey.keystore" />
+        <option name="proGuardCfgFiles">
+          <list>
+            <option value="file://%MODULE_SDK_HOME%/tools/proguard/proguard-android.txt" />
+          </list>
+        </option>
+        <option name="signingMode" value="RELEASE_SIGNED" />
+      </options>
+    </properties>
+    <root id="archive" name="AirsLA.apk">
+      <element id="android-final-package" facet="AirsLA/android/Android" />
+    </root>
+  </artifact>
+</component>

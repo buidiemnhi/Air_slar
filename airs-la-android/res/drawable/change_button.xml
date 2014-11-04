@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/change_my_password_selected"
+          android:state_pressed="true"/>
+    <item android:drawable="@drawable/change_my_password"
+          android:state_focused="true"/>
+    <item android:drawable="@drawable/change_my_password"/>
+</selector>
